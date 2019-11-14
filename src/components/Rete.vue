@@ -22,14 +22,9 @@ export default {
   width: 140px;
 }
 
-.socket .output .number {
-  background: red
-}
-
-
 select, input {
   width: 100%;
-  border-radius: 30px;
+  border-radius: 2px;
   background-color: white;
   padding: 2px 6px;
   border: 1px solid #999;
