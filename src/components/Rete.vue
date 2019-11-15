@@ -1,5 +1,9 @@
 <template>
-  <div id="rete" ref="rete"></div>
+  <div id="rete" ref="rete">
+    <button onclick="console.log('hi')" class="spectrum-Button">
+      <span class="spectrum-Button-label">Execute</span>
+    </button>
+  </div>
 </template>
 
 <script>
@@ -16,6 +20,18 @@ export default {
 #rete {
   width: 100%;
   height: 100%;
+  background: var(--spectrum-global-color-gray-200);
+  background-size:55px 55px;
+  background-image:
+    linear-gradient(to right, var(--spectrum-global-color-gray-400) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--spectrum-global-color-gray-400) 1px, transparent 1px);
+}
+
+#rete button {
+  float: left;
+  position: relative;
+  z-index: 999;
+  margin: 10px
 }
 
 .node .control input, .node .input-control input {
