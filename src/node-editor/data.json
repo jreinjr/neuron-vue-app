@@ -1,0 +1,22 @@
+{
+    "id": "neuron@0.1.0",
+    "nodes": {
+        "1": {
+            "id": 1,
+            "data": {},
+            "group": null,
+            "inputs": {},
+            "outputs": {
+                "num": {
+                    "connections": [
+                    ]
+                }
+            },
+            "position": [
+                100, 100
+            ],
+            "name": "Number"
+        }
+    },
+    "groups": {}
+}
