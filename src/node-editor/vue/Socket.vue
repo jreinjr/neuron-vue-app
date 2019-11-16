@@ -38,6 +38,4 @@ export default {
     background: var(--spectrum-global-color-indigo-400)
   &.text
     background: var(--spectrum-global-color-celery-400)
-  &.any
-    background: var(--spectrum-global-color-gray-700)
 </style>

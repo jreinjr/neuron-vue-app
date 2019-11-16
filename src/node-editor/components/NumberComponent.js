@@ -14,8 +14,7 @@ export class NumberComponent extends Rete.Component {
   builder(node) {
     let out = new Rete.Output("num", "Number", NumberSocket);
 
-    node.addControl(new NumberControl(this.editor, "num"));
-    node.addOutput(out);
+    node.addControl(new NumberControl(this.editor, "num")).addOutput(out);
   }
 
   worker(node, inputs, outputs) {

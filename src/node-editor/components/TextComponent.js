@@ -13,8 +13,7 @@ export class TextComponent extends Rete.Component {
   builder(node) {
     let out = new Rete.Output("txt", "Text", TextSocket);
 
-    node.addControl(new TextControl(this.editor, "txt"));
-    node.addOutput(out);
+    node.addControl(new TextControl(this.editor, "txt")).addOutput(out);
   }
 
   worker(node, inputs, outputs) {

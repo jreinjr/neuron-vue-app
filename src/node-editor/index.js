@@ -7,10 +7,9 @@ import Node from "./vue/Node.vue"
 import { NumberComponent } from "./components/NumberComponent.js";
 import { TextComponent } from "./components/TextComponent.js";
 import data from "./data.json";
-import { ViewerComponent } from "./components/ViewerComponent";
 
 export default async function(container) {
-  const components = [new NumberComponent(), new TextComponent(), new ViewerComponent()];
+  const components = [new NumberComponent(), new TextComponent()];
 
   const editor = new Rete.NodeEditor("neuron@0.1.0", container);
   const engine = new Rete.Engine("neuron@0.1.0");
