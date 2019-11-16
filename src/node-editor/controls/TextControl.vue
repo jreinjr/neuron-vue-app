@@ -1,5 +1,5 @@
 <template class="spectrum spectrum--large spectrum--darkest">
-    <input type="text" class="spectrum-Textfield" :readonly="readonly" :value="value" @input="change($event)" >
+    <input type="text" name="field" class="spectrum-Textfield" :readonly="readonly" :value="value" @input="change($event)" >
 </template>
 
 <script>

@@ -24,7 +24,11 @@
 </template>
 
 <script>
-
+import "@spectrum-css/vars/dist/spectrum-global.css";
+import "@spectrum-css/vars/dist/spectrum-large.css";
+import "@spectrum-css/vars/dist/spectrum-darkest.css";
+import "@spectrum-css/page/dist/index-vars.css";
+import "@spectrum-css/textfield/dist/index-vars.css";
 
 import mixin from './mixin';
 import Socket from './Socket.vue';
