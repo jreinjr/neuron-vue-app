@@ -1,20 +1,20 @@
-<template class="spectrum spectrum--large spectrum--darkest">
-    <input type="number" class="spectrum-Textfield" :readonly="readonly" :value="value" @input="change($event)" @dblclick.stop="" @pointerdown.stop="" @pointermove.stop=""/>
+<template>
+    <input type="text" class="spectrum-Textfield" :readonly="readonly" :value="value" @input="change($event)" >
 </template>
 
-
-
 <script>
+
+
 export default {
   props: ["readonly", "emitter", "ikey", "getData", "putData"],
   data() {
     return {
-      value: 0
+      value: ""
     };
   },
   methods: {
     change(e) {
-      this.value = +e.target.value;
+      this.value = e.target.value;
       this.update();
     },
     update() {

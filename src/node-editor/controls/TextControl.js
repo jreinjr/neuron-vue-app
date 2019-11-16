@@ -1,5 +1,5 @@
 import Rete from "rete";
-import VueTextControl from "./TextControl.vue";
+import VueTextControl from "./_TextControl.vue";
 
 export class TextControl extends Rete.Control {
   constructor(emitter, key, readonly) {

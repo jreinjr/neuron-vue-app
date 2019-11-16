@@ -1,15 +1,15 @@
 <template>
   <div id="rete" ref="rete">
-    <button onclick="console.log('hi')" class="spectrum-Button">
-      <span class="spectrum-Button-label">Execute</span>
-    </button>
+    <Menu />
   </div>
 </template>
 
 <script>
+import Menu from './Menu.vue'
 import init from "../node-editor";
 
 export default {
+  components: { Menu },
     mounted() {
         init(this.$refs.rete);
     }
