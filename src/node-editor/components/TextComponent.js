@@ -5,9 +5,9 @@ import { TextControl } from "../controls/TextControl.js";
 export class TextComponent extends Rete.Component {
   constructor() {
     super("Text");
-    // this.data.render = "vue";
-    // this.data.component = Node;
-    // this.data.props = {};
+    this.task = {
+      outputs: {txt: 'output'}
+    }
   }
 
   builder(node) {
@@ -19,5 +19,6 @@ export class TextComponent extends Rete.Component {
 
   worker(node, inputs, outputs) {
     outputs["txt"] = node.data.txt;
+    return {txt: node.data.txt}
   }
 }
