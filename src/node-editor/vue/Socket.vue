@@ -35,7 +35,5 @@ export default {
   &.input
     margin-left: - $socket-size / 2
   &.number
-    background: var(--spectrum-global-color-indigo-400)
-  &.text
-    background: var(--spectrum-global-color-celery-400)
+    background: yellow
 </style>

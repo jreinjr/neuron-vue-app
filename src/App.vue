@@ -19,7 +19,8 @@ export default {
 #app {
   width: 100%;
   height: 100%;
-  background: var(--spectrum-global-color-gray-200);
+  background: black;
+  
 }
 
 </style>
