@@ -39,7 +39,5 @@ export default {
   &.text
     background: var(--spectrum-global-color-celery-400)
   &.any
-    background: var(--spectrum-global-color-gray-400)
-  &.action
-    background: var(--spectrum-global-color-gray-800)
+    background: var(--spectrum-global-color-gray-700)
 </style>

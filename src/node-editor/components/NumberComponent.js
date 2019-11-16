@@ -6,9 +6,9 @@ import { NumberControl } from "../controls/NumberControl.js";
 export class NumberComponent extends Rete.Component {
   constructor() {
     super("Number");
-    this.task = {
-      outputs: {num: 'output'}
-    }
+    // this.data.render = "vue";
+    // this.data.component = Node;
+    // this.data.props = {};
   }
 
   builder(node) {
@@ -18,7 +18,7 @@ export class NumberComponent extends Rete.Component {
     node.addOutput(out);
   }
 
-  worker(node) {
-    return {num: node.data.num}
+  worker(node, inputs, outputs) {
+    outputs["num"] = node.data.num;
   }
 }

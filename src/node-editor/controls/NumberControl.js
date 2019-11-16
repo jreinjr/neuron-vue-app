@@ -1,5 +1,5 @@
 import Rete from "rete";
-import VueNumberControl from "./_NumberControl.vue";
+import VueNumberControl from "./NumberControl.vue";
 
 export class NumberControl extends Rete.Control {
   constructor(emitter, key, readonly) {
