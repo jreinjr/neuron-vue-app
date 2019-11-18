@@ -15,6 +15,6 @@ export class AlertComponent extends Rete.Component {
   }
 
   worker() {
-    console.log("Test");
+    alert("alerted");
   }
 }

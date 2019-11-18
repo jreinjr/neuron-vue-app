@@ -1,8 +1,6 @@
 <template>
   <div>
-    <button v-on:click="execute" class="spectrum-Button">
-      <span class="spectrum-Button-label">Execute</span>
-    </button>
+    <button v-on:click="execute">Execute</button>
   </div>
 </template>
 
@@ -12,7 +10,8 @@
 export default {
   methods: {
     execute: () => {
-      document.dispatchEvent(new Event("execute"));
+      var event = new Event('execute');
+      document.dispatchEvent(event);
     }
   }
 };

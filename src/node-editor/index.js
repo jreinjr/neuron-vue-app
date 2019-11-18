@@ -4,6 +4,7 @@ import ContextMenuPlugin from "rete-context-menu-plugin";
 import TaskPlugin from "rete-task-plugin";
 import VueRenderPlugin from "rete-vue-render-plugin";
 
+import "./styles.scss";
 import Node from "./vue/Node.vue";
 import { NumberComponent } from "./components/NumberComponent.js";
 import { TextComponent } from "./components/TextComponent.js";

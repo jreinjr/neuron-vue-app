@@ -1,12 +1,12 @@
 <template>
-  <div id="rete" ref="rete">
-    <Menu />
+  <div id="rete" ref="rete" >
+    <Menu/>
   </div>
 </template>
 
 <script>
-import Menu from './Menu.vue'
 import init from "../node-editor";
+import Menu from './Menu.vue'
 
 export default {
   components: { Menu },
@@ -16,15 +16,16 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss" scoped>
+@import "../node-editor/vars";
 #rete {
   width: 100%;
   height: 100%;
-  background: var(--spectrum-global-color-gray-200);
+  background: $spectrum-global-color-gray-200;
   background-size:55px 55px;
   background-image:
-    linear-gradient(to right, var(--spectrum-global-color-gray-400) 1px, transparent 1px),
-    linear-gradient(to bottom, var(--spectrum-global-color-gray-400) 1px, transparent 1px);
+    linear-gradient(to right, $spectrum-global-color-gray-400 1px, transparent 1px),
+    linear-gradient(to bottom, $spectrum-global-color-gray-400 1px, transparent 1px);
 }
 
 #rete button {

@@ -1,10 +1,10 @@
 <template lang="pug">
 .node(:class="[selected(), node.name] | kebab")
-  .title.spectrum-Heading1 {{node.name}}
+  .title {{node.name}}
 
   // Outputs
   .output(v-for='output in outputs()' :key="output.key")
-    .output-title.spectrum-Body1 {{output.name}}
+    .output-title {{output.name}}
     Socket(v-socket:output="output", type="output", :socket="output.socket")
 
   // Controls
@@ -38,11 +38,11 @@ export default {
 </script>
 
 <style lang="sass" scoped>
-@import "./vars"
+@import "../vars"
 
 .node
-  background: var(--spectrum-global-color-gray-100)
-  border: 2px solid var(--spectrum-global-color-gray-600)
+  background: $spectrum-global-color-gray-100
+  border: 2px solid $spectrum-global-color-gray-600
   border-radius: 2px
   cursor: pointer
   min-width: $node-width
@@ -58,6 +58,7 @@ export default {
   .title
     padding: 8px
     font-size: 24px
+    color: $spectrum-global-color-gray-800
   .output
     text-align: right
   .input
@@ -66,6 +67,7 @@ export default {
     font-size: 16px
     vertical-align: middle
     display: inline-block
+    color: $spectrum-global-color-gray-800
     margin: $socket-margin
     line-height: $socket-size
   .input-control
