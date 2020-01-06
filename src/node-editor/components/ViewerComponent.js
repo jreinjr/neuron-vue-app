@@ -1,21 +1,6 @@
 import Rete from "rete";
-//import Node from "../vue/Node.vue";
 import { AnySocket, ActionSocket } from "../sockets";
 import { TextControl } from "../controls/TextControl.js"
-
-// var eventHandlers = {
-//   list: [],
-//   remove(name) {
-//     this.list.forEach(h => {
-//       document.removeEventListener(name, h);
-//     });
-//     this.list = [];
-//   },
-//   add(name, h) {
-//     document.addEventListener(name, h, false);
-//     this.list.push(h);
-//   }
-// };
 
 export class ViewerComponent extends Rete.Component {
   constructor() {
